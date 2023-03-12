@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <title>My first websire</title>
+    <title>Signpost</title>
     <link rel="stylesheet" href="./public/styles/styles.css"/>
 </head>
 
@@ -9,9 +9,32 @@
 
 <body>
 
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
-    <button>Click me</button>
+    <h1>Signpost</h1>
+
+    <div class="language-dropdown">
+        <label for="language-select">Written Language:</label>
+        <select id="language-select">
+            <option value="english">English</option>
+            <!-- Add more options here for each written language -->
+        </select>
+    </div>
+
+    <div class="category-dropdown">
+        <select id="category-select">
+          <option value="bsl">British Sign Language</option>
+          <!-- Add more options here for each category -->
+        </select>
+    </div>
+
+    <div class="search-bar">
+        <label for="written-term-input">Written Term:</label>
+        <input type="text" id="written-term-input" name="written-term">
+    </div>
+
+
+      
+
+    <button id="search-button">Search</button>
 
     <script src="./public/scripts/script.js"></script>
 
