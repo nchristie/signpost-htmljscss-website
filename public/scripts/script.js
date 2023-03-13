@@ -15,8 +15,20 @@ button.addEventListener('click', () => {
       return response.json();
     })
     .then(data => {
-      console.log(data);
-      // Do something with the data returned by the API
+      const urls = data.urls;
+
+      const videoContainer = document.getElementById('video-container');
+      videoContainer.innerHTML = '';
+
+      urls.forEach(url => {
+        const iframe = document.createElement('iframe');
+        iframe.setAttribute('src', url);
+        iframe.setAttribute('width', '560');
+        iframe.setAttribute('height', '315');
+        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+        iframe.setAttribute('allowfullscreen', '');
+        videoContainer.appendChild(iframe);
+      });
     })
     .catch(error => {
       console.error('There was a problem with the fetch operation:', error);

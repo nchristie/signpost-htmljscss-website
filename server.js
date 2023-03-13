@@ -67,6 +67,16 @@ app.get('/api/v1/video_urls/find_urls', (req, res) => {
     })
     .then(data => {
       res.json(data);
+
+      const urls = data.urls;
+
+const videoContainer = document.getElementById('video-container');
+
+urls.forEach(url => {
+  const iframe = document.createElement('iframe');
+  iframe.setAttribute('src', url);
+  videoContainer.appendChild(iframe);
+});
     })
     .catch(error => {
       console.error('There was a problem with the fetch operation:', error);
