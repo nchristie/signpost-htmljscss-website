@@ -1,6 +1,7 @@
 const button = document.querySelector('button');
+const input = document.querySelector('#written-term-input');
 
-button.addEventListener('click', () => {
+const search = () => {
   const writtenTerm = document.querySelector('#written-term-input').value;
   const category = document.querySelector('#category-select').value;
   const writtenLanguage = document.querySelector('#language-select').value;
@@ -33,4 +34,13 @@ button.addEventListener('click', () => {
     .catch(error => {
       console.error('There was a problem with the fetch operation:', error);
     });
+};
+
+button.addEventListener('click', search);
+
+input.addEventListener('keydown', event => {
+  if (event.keyCode === 13) { // 13 is the keycode for Enter
+    event.preventDefault(); // prevent the default form submission behavior
+    button.click(); // simulate a click on the search button
+  }
 });
