@@ -189,10 +189,6 @@ h1 {
   #language-select,
   #category-select {
     appearance: none;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSIxMjAwIiB2aWV3Qm94PSIwIDAgMTIwMCAxMjAwIiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMiI+CiAgPGcgaWQ9Imljb25fMSI+CiAgICA8cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMzI4LjYyMyAxMjAuMDM1bC00Ni43NTkgMjMuNzQxTDEyMC4xMzUgNTAuMjA3bDQ2Ljc1OSAyMy43NDF6Ii8+CiAgICA8cGF0aCBkPSJNMjUwLjU1NSAyNzQuMzM4bC0xNS4zNzYtMTkuMDU5IDI5LjM5OC0yMy43NDEgNDYuNzU5LTIzLjc0MXoiLz4KICA8L2c+Cjwvc3ZnPgo=);
-    background-repeat: no-repeat;
-    background-position: right 0.5rem center;
-    background-size: 1.5rem auto;
     color: #555;
     cursor: pointer;
     padding: 0.5rem;
