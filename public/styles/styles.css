@@ -122,31 +122,6 @@ h1 {
   position: relative;
 }
 
-.select-container::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 0.5rem;
-  transform: translateY(-50%);
-  width: 0.5rem;
-  height: 0.5rem;
-  border-top: 0.25rem solid #555;
-  border-right: 0.25rem solid #555;
-  transition: transform 0.2s ease-in-out;
-}
-
-.select-container::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 0.25rem;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border: 0.25rem solid transparent;
-  border-top: 0.25rem solid #555;
-}
-
 .select-container:focus-within::before {
   transform: translateY(-50%) rotate(45deg);
 }

@@ -2,7 +2,7 @@
 
 const button = document.querySelector('button');
 const input = document.querySelector('#written-term-input');
-const rails_server_address = "http://35.246.52.11:3000";
+const rails_server_address = "http://34.142.5.175:3000";
 
 const search = () => {
   const writtenTerm = document.querySelector('#written-term-input').value;
