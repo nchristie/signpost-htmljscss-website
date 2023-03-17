@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 
 const hostname = '34.142.5.175';
-const port = 3001;
+const port = 80;
 
 app.get('/', (req, res) => {
   const filePath = path.join(__dirname, 'public', 'html', 'index.html');
