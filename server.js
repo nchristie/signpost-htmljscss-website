@@ -55,8 +55,6 @@ app.get('/public/scripts/script.js', (req, res) => {
 app.get('/api/v1/video_urls/find_urls', (req, res) => {
   const { written_term, category, written_language } = req.query;
   const url = `http://localhost:3000/api/v1/video_urls/find_urls?written_term=${written_term}&category=${category}&written_language=${written_language}`;
-  // const url = `http://localhost:3000/api/v1/video_urls/find_urls?written_term=${written_term}&category=${encodeURIComponent('British Sign Language')}&written_language=${written_language}`;
-
 
   fetch(url)
     .then(response => {
@@ -67,16 +65,6 @@ app.get('/api/v1/video_urls/find_urls', (req, res) => {
     })
     .then(data => {
       res.json(data);
-
-      const urls = data.urls;
-
-const videoContainer = document.getElementById('video-container');
-
-urls.forEach(url => {
-  const iframe = document.createElement('iframe');
-  iframe.setAttribute('src', url);
-  videoContainer.appendChild(iframe);
-});
     })
     .catch(error => {
       console.error('There was a problem with the fetch operation:', error);
