@@ -7,7 +7,7 @@ const fs = require('fs');
 const app = express();
 app.use(cors());
 
-const hostname = '34.142.5.175';
+const hostname = '10.154.0.2';
 const port = 3001;
 
 app.get('/', (req, res) => {
