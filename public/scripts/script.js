@@ -6,7 +6,7 @@ const search = () => {
   const category = document.querySelector('#category-select').value;
   const writtenLanguage = document.querySelector('#language-select').value;
 
-  const url = `http://localhost:3001/api/v1/video_urls/find_urls?written_term=${writtenTerm}&category=${category}&written_language=${writtenLanguage}`;
+  const url = `http://10.154.0.2:3001/api/v1/video_urls/find_urls?written_term=${writtenTerm}&category=${category}&written_language=${writtenLanguage}`;
 
   fetch(url)
     .then(response => {

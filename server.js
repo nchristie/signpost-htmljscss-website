@@ -54,7 +54,7 @@ app.get('/public/scripts/script.js', (req, res) => {
 
 app.get('/api/v1/video_urls/find_urls', (req, res) => {
   const { written_term, category, written_language } = req.query;
-  const url = `http://localhost:3000/api/v1/video_urls/find_urls?written_term=${written_term}&category=${category}&written_language=${written_language}`;
+  const url = `http://10.154.0.2:3000/api/v1/video_urls/find_urls?written_term=${written_term}&category=${category}&written_language=${written_language}`;
 
   fetch(url)
     .then(response => {
