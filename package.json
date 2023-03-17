@@ -1,0 +1,17 @@
+{
+    "name": "signpose-htmljscss-website",
+    "version": "1.0.0",
+    "description": "A comunity-curated, international sign language video dictionary",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Naomi Christie",
+    "license": "MIT",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "isomorphic-fetch": "^3.0.0"
+    }
+}
