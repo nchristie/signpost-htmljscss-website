@@ -1,3 +1,5 @@
+// public/scripts/script.js
+
 const button = document.querySelector('button');
 const input = document.querySelector('#written-term-input');
 const rails_server_address = "http://35.246.52.11:3000";
