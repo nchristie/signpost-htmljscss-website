@@ -1,12 +1,13 @@
 const button = document.querySelector('button');
 const input = document.querySelector('#written-term-input');
+const rails_server_address = "http://35.246.52.11:3000";
 
 const search = () => {
   const writtenTerm = document.querySelector('#written-term-input').value;
   const category = document.querySelector('#category-select').value;
   const writtenLanguage = document.querySelector('#language-select').value;
 
-  const url = `http://10.154.0.2:3001/api/v1/video_urls/find_urls?written_term=${writtenTerm}&category=${category}&written_language=${writtenLanguage}`;
+  const url = `${rails_server_address}/api/v1/video_urls/find_urls?written_term=${writtenTerm}&category=${category}&written_language=${writtenLanguage}`;
 
   fetch(url)
     .then(response => {
