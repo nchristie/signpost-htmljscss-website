@@ -9,9 +9,9 @@ const fs = require('fs');
 const app = express();
 app.use(cors());
 
-const hostname = process.env.HOSTNAME;
+const hostname = "localhost";
 const port = 3001;
-const rails_server_address = process.env.REMOTE_RAILS_SERVER_ADDRESS;
+const rails_server_address = "http://localhost:3000";
 
 app.get('/', (req, res) => {
   const filePath = path.join(__dirname, 'public', 'html', 'index.html');
